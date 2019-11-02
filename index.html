@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+        <a href="" class="logo">Go-Wing</a>
+        <nav class="page-nav">
+            <a href="#" class="flight active">Flight</a>
+            <a href="#" class="train">Train</a>
+        </nav>
+        <nav class="user-nav">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="signup">Signup</a>
+        </nav>
+    </header>
+    <section class="booking-section">
+        <h1>Lets find your Wing Easily and Efficiently</h1>
+        <span>We give you the Guaranteed and best Experience flying</span>
+        
+        <div class="travel-details">
+            <label>
+                <input id="origin-value" class="input" type="text" name="username">
+                <code>From</code>
+            </label>
+            <label>
+                <input id ="destination-value" class="input" type="text" name="username">
+                <code>To</code>
+            </label>
+            <label>
+                <input id ="startdate-value" class="input" type="date" name="username">
+                <code>Start date</code>
+            </label>
+            <label class="rv">
+                <input id ="return-value" class="input" type="date" name="username">
+                <code>Return date</code>
+            </label>
+            <label class="rv">
+                <input id ="passengers-list" class="input" type="number" name="username">
+                <code>Passengers</code>
+            </label>
+            <button id="submit-btn">Search</button>
+            <ul class="journey-timeline">
+                <li class="journey-from">Chennai</li>
+                <li class="journey-to">Mumbai</li>
+                <li class="journey-from">Chennai</li>
+                <li class="return-date">30-09-2018</li>
+                <li class="start-date">29-09-2018</li>
+            </ul>
+        </div>
+        <ul class="flight-list"></ul>
+    </section>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

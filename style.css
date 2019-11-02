@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3e3e52;
+}
+input {
+    padding: 10px;
+    height: 35px;
+    font-size: 14px;
+    color: #2D3C30;
+    margin: 5px 10px 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    outline: none;
+    width: 212px;
+}
+input.error {
+    border-color: red;
+}
+button {
+    padding: 9px 25px;
+    border: none;
+    background-color: #00B8FF;
+    border-radius: 4px;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+.active {
+    opacity: 1 !important;
+    border-bottom: 2px solid #00b8ff;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    padding: 20px 50px;
+    background-color: #F8F8F8;
+}
+header a {
+    color: #2D3C30;
+    transition: 0.2s linear;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    font-size: 18px;
+}
+.user-nav a.signup {
+    padding: 9px 25px;
+    border: 1px solid #00B8FF;
+    border-radius: 4px;
+    position: relative;
+    font-size: 14px;
+    opacity: 1;
+    transition: .2s linear;
+}
+header:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+header a.logo {
+    float: left;
+    font-size: 32px;
+    opacity: 1;
+}
+nav.page-nav {
+    float: left;
+    margin: 0 30px;
+}
+.page-nav a {
+    margin: 0px 20px;
+    line-height: 42px;
+    display: inline-block;
+}
+nav.user-nav {
+    float: right;
+}
+.user-nav a {
+    margin: 0 0 0 20px;
+    line-height: 39px;
+}
+section.booking-section {
+    position: absolute;
+    top: 0;
+    padding-top: 80px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    z-index: -1;
+}
+section.booking-section h1 {
+    font-size: 26px;
+    transition: .3s linear;
+    margin: 50px 0 20px;
+}
+section.booking-section > span {
+    opacity: .6;
+    transition: .3s linear;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.travel-details label {
+    position: relative;
+}
+.travel-details {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    transition: .3s linear;
+}
+.travel-details label code {
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: -16px;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 1px 5px;
+    opacity: .7;
+}
+.travel-details label code:after {
+    content: "*";
+    color: red;
+    font-size: 12px;
+    margin: 0 3px;
+}
+ul.flight-list {
+    width: 90%;
+    margin: 0 auto;
+}
+ul.flight-list li.flight-details {
+    margin: 20px 10px;
+    padding: 20px;
+    transition: .4s ease;
+    border: 1px solid #e7e7e7;
+    width: calc(100% / 2 - 20px);
+    float: left;
+}
+ul.flight-list li.flight-details::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+ul.flight-list li.flight-details:hover {
+    box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+}
+ul.flight-list li.flight-details .about-details {
+    float: left;
+    width: 70%;
+}
+ul.flight-list li.flight-details ul {
+    width: 50%;
+    float: left;
+    text-align: left;
+    margin-top: 10px;
+}
+ul.flight-list li.flight-details .about-details h2 {
+    text-align: left;
+    font-size: 32px;
+}
+ul.flight-list li.flight-details .about-details h2:after {
+    content: ".00";
+}
+ul.flight-list li.flight-details .about-details h2:before {
+    content: "Rs.";
+    margin-right: 10px;
+}
+ul.flight-list li.flight-details ul li.flight-id {
+    opacity: .7;
+    font-size: 14px;
+}
+ul.flight-list li.flight-details ul li {
+    margin: 10px 0;
+}
+ul.flight-list li.flight-details ul li.flight-journey span, ul.flight-list li.flight-details ul .return-journey span {
+    opacity: 1;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 600;
+}
+ul.flight-list li.flight-details ul li.flight-journey span:first-child:after, ul.flight-list li.flight-details ul .return-journey span:first-child:after {
+    content: ">";
+    margin: 0 10px;
+    opacity: .7;
+}
+ul.flight-list li.flight-details ul li:last-child {
+    margin: 0;
+}
+ul.flight-list li.flight-details .about-flight {
+    float: right;
+}
+ul.flight-list li.flight-details ul li span {
+    opacity: .8;
+}
+ul.flight-list li.flight-details .about-flight {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+ul.flight-list li.flight-details .about-flight img {
+    width: 100%;
+    height: 140px;
+}
+ul.flight-list li.flight-details .about-flight button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+section.booking-section.show-result h1, section.booking-section.show-result > span {
+    display: none;
+}
+.show-result .travel-details {
+    margin-top: 30px;
+}
+ul.journey-timeline li {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+}
+ul.journey-timeline li.start-date, ul.journey-timeline li.return-date {
+    float: right;
+    font-size: 14px;
+    line-height: 29px;
+    margin: 0 10px;
+}
+ul.journey-timeline li:last-child {
+    margin: 0;
+}
+ul.journey-timeline li.start-date:before, ul.journey-timeline li.return-date:before {
+    content: "start-date :";
+    font-weight: 100;
+    opacity: .9;
+    margin-right: 3px;
+    font-size: 15px;
+}
+ul.journey-timeline {
+    margin: 0 10px;
+    display: none;
+}
+ul.journey-timeline li.return-date:before {
+    content: "return-date :";
+}
+ul.journey-timeline li.journey-from:after, ul.journey-timeline li.journey-to + .journey-from:before {
+    content: ">";
+    margin: 0 10px;
+    opacity: .7;
+    position: relative;
+    top: 1px;
+}
+ul.journey-timeline li.journey-to + .journey-from:after {
+    display: none;
+}
+ul.journey-timeline li.journey-to + .journey-from:before {
+    display: none;
+}
+.booking-section.no-return  ul.journey-timeline li.journey-to + .journey-from {
+    display: none;
+}
+.booking-section.no-return ul.journey-timeline li.return-date {
+    display: none;
+}
+.show-result ul.journey-timeline {
+    display: block;
+}
+.travel-details label.rv code:after {
+    display: none;
+}
+ul.flight-list li.flight-details ul li.flight-id:before {
+    content: 'AI - ';
+}
+
+.booking-section.no-return ul.flight-list li.flight-details ul.return-details {
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    ul.flight-list li.flight-details {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    ul.journey-timeline li.start-date, ul.journey-timeline li.return-date {
+        float: none;
+        font-size: 14px;
+        line-height: 29px;
+        margin: 10px 0 0 0;
+        display: block;
+    }
+}
